@@ -1,0 +1,30 @@
+object slip1
+{
+    def main(args: Array[String])
+    {
+        var str="";
+	var q=0;
+        var st= Map("tony"->"70",
+                    "bruce"->"80",
+                    "peter"->"60",
+                    "natasha"->"90",
+                    "barton"->"88")
+
+  println("name        percentage")
+        for ((k,v) <- st)
+        println(k,v)
+
+println("student with highest percent :")
+        for ((k,v) <- st)
+        {
+		if(v>q)
+		q=v;
+        }
+        for ((k,v) <- st)
+        {
+		if(v==q)
+		println(k,v)
+        }
+
+    }
+}
